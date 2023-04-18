@@ -12,7 +12,8 @@
                 <a href="{% url 'item:detail' item.id %}">
                     <div>
                         {% if item.image %}
-                            <img src="{{ item.image.url }}" class="rounded-t-xl">
+                            <!-- TODO: change max-height: 500px to a % value so it is not static -->
+                            <img src="{{ item.image.url }}" class="rounded-t-xl" style="max-height: 500px; margin-left: auto; margin-right: auto;">
                         {% endif %}
                     </div>
 
